@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class EstadoEnvios extends Model
 {
     use HasFactory;
-
+    protected $table = 'estados_envios';
 
     public function envios()
     {

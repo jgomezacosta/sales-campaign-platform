@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class SenderNumber extends Model
 {
     use HasFactory;
-
+    protected $table = 'sender_numbers';
 
     public function envios()
     {
