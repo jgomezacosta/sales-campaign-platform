@@ -14,4 +14,9 @@ class SenderNumber extends Model
     {
         return $this->hasMany(Envio::class);
     }
+
+    public function vendedor()
+    {
+        return $this->belongsTo(Vendedor::class);
+    }
 }

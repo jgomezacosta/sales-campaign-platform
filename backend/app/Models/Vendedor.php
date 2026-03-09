@@ -19,4 +19,9 @@ class Vendedor extends Model
     {
         return $this->hasMany(Ticket::class);
     }
+
+    public function senderNumbers()
+    {
+        return $this->hasMany(SenderNumber::class);
+    }
 }
